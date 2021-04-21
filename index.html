@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yusuf's Contact Form</title>
+    <link rel="stylesheet" href="neu.css" />
+    <link rel="stylesheet" href="./glass.css" />
+  </head>
+  <body>
+    <!-- modify this form HTML and place wherever you want your form -->
+
+    <form
+      id="contact-form"
+      action="https://formspree.io/f/xwkapwlj"
+      method="POST"
+    >
+      <div>
+        <h1 class="heading">Contact Form</h1>
+        <div class="form-group">
+          <label class="form-label" for="name">Full Name</label>
+          <input
+            class="form-input"
+            type="text"
+            id="name"
+            name="name"
+            required
+            placeholder="Full Name"
+          />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="email">Your email:</label>
+          <input
+            class="form-input"
+            type="email"
+            id="email"
+            name="_replyto"
+            required
+            placeholder="example@gmail.com"
+          />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="phone">Your Number</label>
+          <input
+            class="form-input"
+            type="tel"
+            id="phone"
+            name="phone"
+            required
+            placeholder="0726515189"
+            min="10"
+            max="10"
+          />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="message">Your message:</label>
+          <textarea
+            class="form-input"
+            name="message"
+            id="message"
+            required
+            placeholder="Type your message here"
+          >
+          </textarea>
+        </div>
+        <!-- your other form fields go here -->
+
+        <button class="button" type="submit">Send</button>
+      </div>
+    </form>
+  </body>
+</html>
